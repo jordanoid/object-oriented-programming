@@ -1,8 +1,10 @@
 package com.inheritance;
 
 public class BangunDatar{
+    public String name;
     BangunDatar(String name){
-        System.out.println("Ini adalah "+ name);
+        this.name = name;
+        System.out.println("Telah dibuat object dari class " + this.name);
     }
 }
 class Segitiga extends BangunDatar{
@@ -30,8 +32,9 @@ class Segiempat extends BangunDatar{
 }
 class Lingkaran extends BangunDatar{
     float jari, luas;
-    Lingkaran(){
+    Lingkaran(float jari){
         super("Lingkaran");
+        this.jari = jari;
     }
     float getLuas(){
         this.luas = (float) (this.jari * this.jari * 3.14);

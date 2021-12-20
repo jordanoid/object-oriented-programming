@@ -1,8 +1,10 @@
 package com.inheritance;
 
 public class BangunRuang{
+    public String name;
     BangunRuang(String name){
-        System.out.println("Ini adalah "+ name);
+        this.name = name;
+        System.out.println("Telah dibuat object dari class "+ this.name);
     }
 }
 class Prisma extends BangunRuang{
